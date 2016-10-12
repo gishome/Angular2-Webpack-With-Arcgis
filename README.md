@@ -1,6 +1,8 @@
 # Angular2 Webpack With Arcgis
    this repo is a demo to show how to load arcgis js api based on Angular2 Webpack Starter
 
+   thanks for @tomwayson and @hassanqaiser.
+
 # Angular2 Webpack Starter (https://github.com/AngularClass/angular2-webpack-starter)
 
 
