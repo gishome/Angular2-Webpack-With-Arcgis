@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= webpackConfig.metadata.title %></title>
+
+  <meta name="description" content="<%= webpackConfig.metadata.title %>">
+
+  <% if (webpackConfig.htmlElements.headTags) { %>
+  <!-- Configured Head Tags  -->
+  <%= webpackConfig.htmlElements.headTags %>
+  <% } %>
+
+   <link rel="stylesheet" href="//js.arcgis.com/3.18/esri/themes/calcite/dijit/calcite.css">
+  <link rel="stylesheet" href="//js.arcgis.com/3.18/esri/themes/calcite/esri/esri.css">
+
+  <!-- base url -->
+  <base href="<%= webpackConfig.metadata.baseUrl %>">
+
+ 
+   <script>
+    window.dojoConfig = {
+      async: true,
+      isDebug: true
+    };
+  </script>
+<script src="https://js.arcgis.com/3.18/" ></script>
+
+ 
+</head>
+
+<body>
+
+  <app>
+    Loading...
+  </app>
+
+
+
+ 
+ <script>
+    setTimeout(function(){ 
+      require([
+        "polyfills.bundle.js", 
+        "vendor.bundle.js",
+        "main.bundle.js"
+      ], function (polyfills, vendor, main) {}); 
+    }, 3000);
+    
+  </script>  
+</body>
+</html>
