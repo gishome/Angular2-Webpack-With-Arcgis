@@ -24,7 +24,8 @@
 
 4. Add the following in the index.html
 
-  <script>
+  ```javascript  
+   <script>
     window.dojoConfig = {
       async: true,
       isDebug: true
@@ -41,6 +42,8 @@
     }, 4000);
     
   </script>  
+  
+  ```
 
 5. Update webpack.common.js
 
