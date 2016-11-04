@@ -42,7 +42,7 @@
     
   </script>  
 
-  5. Update webpack.common.js
+5. Update webpack.common.js
 
       new HtmlWebpackPlugin({
         template: 'src/index.html',
