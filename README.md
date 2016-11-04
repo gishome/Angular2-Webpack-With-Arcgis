@@ -54,7 +54,7 @@
       }),
    ```
 
-  6. Add in webpack.common.js
+6. Add in webpack.common.js
    ```javascript  
       externals: [
        
@@ -71,6 +71,7 @@
     ],
     devtool: 'source-map'
    ```
+   
 7. In webpack.dev.js
 
       // library: 'ac_[name]',
