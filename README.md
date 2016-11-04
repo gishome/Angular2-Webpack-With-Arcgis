@@ -46,16 +46,16 @@
   ```
 
 5. Update webpack.common.js
-
+   ```javascript  
       new HtmlWebpackPlugin({
         template: 'src/index.html',
         chunks: [''],
         excludeChunks: ['polyfills', 'vendor', 'main']
       }),
-
+   ```
 
   6. Add in webpack.common.js
-
+   ```javascript  
       externals: [
        
         function(context, request, callback) {
@@ -70,7 +70,7 @@
         }
     ],
     devtool: 'source-map'
-
+   ```
 7. In webpack.dev.js
 
       // library: 'ac_[name]',
